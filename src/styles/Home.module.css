@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+.home {
+  padding-right: 20px;
+  width: 97vw;
+  height: 93vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 43px 4px rgba(0, 0, 0, 0.5411764706);
+  display: flex;
+}
+.home .left {
+  width: 65%;
+  height: 100%;
+  position: relative;
+}
+.home .left .heading {
+  width: 90%;
+  height: 25%;
+  margin: 0 auto 0 auto;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  font-style: normal;
+}
+.home .left .heading span {
+  color: #23F0C7;
+}
+.home .left .form {
+  width: 90%;
+  height: 70%;
+  margin: 0 auto 0 auto;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home .left .form input[type=text] {
+  width: 70%;
+  font-size: 20px;
+  padding: 5px 0 5px 20px;
+  margin-top: 30px;
+}
+.home .left .form input[type=submit] {
+  font-size: 20px;
+  width: 100px;
+  padding: 7px;
+  cursor: pointer;
+  background-color: #23F0C7;
+  color: #46494C;
+}
+.home .right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=Home.module.css.map */
