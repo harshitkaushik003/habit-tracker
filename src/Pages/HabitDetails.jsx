@@ -10,7 +10,6 @@ const HabitDetails = () => {
     const {habits} = useSelector(habitSelector);
     const habit = habits.find(item => item.id === parseInt(id));
     const habitIndex = habits.findIndex(item => item.id === parseInt(id));
-    console.log(habit);
 
     return (
         <div className={styles.detailsMain}>

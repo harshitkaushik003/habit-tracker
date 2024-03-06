@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { actions } from '../redux/habitReducer';
 const DayCard = ({day, idx, habitIndex}) => {
     const dispatch = useDispatch();
+    // function to toggle based on day's index 
     function handleToggle(){
         dispatch(actions.toggle({idx: habitIndex, id: idx}));
     }

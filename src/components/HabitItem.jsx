@@ -5,6 +5,7 @@ import { actions } from '../redux/habitReducer';
 import { Link } from 'react-router-dom';
 const HabitItem = ({habit, idx}) => {
   const dispatch = useDispatch();
+  //function to toggle only today's status
   function handleToggle(){
     dispatch(actions.toggle({idx:idx, id:0}));
   }
