@@ -16,7 +16,9 @@ const DayCard = ({day, idx, habitIndex}) => {
         <div className={styles.status} onClick={handleToggle}>
             {day.status === 'done' 
             ? <img src="https://cdn-icons-png.flaticon.com/128/8358/8358886.png" alt="" />
-            : <img src="https://cdn-icons-png.flaticon.com/128/6358/6358093.png" alt="" />}
+            : (day.status === 'none')
+            ?<img src="https://cdn-icons-png.flaticon.com/128/6358/6358093.png" alt="" />
+            :<img src="https://cdn-icons-png.flaticon.com/128/5709/5709442.png" alt="" />}
         </div>
     </div>
   )

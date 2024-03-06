@@ -27,7 +27,7 @@ const Home = () => {
 
     days.push({
       date: formatDate(today),
-      status: 'pending'
+      status: 'none'
     });
 
     for(let i=1; i<=6; i++){
@@ -35,7 +35,7 @@ const Home = () => {
       prevDay.setDate(today.getDate() - i);
       days.push({
         date: formatDate(prevDay),
-        status: 'pending'
+        status: 'none'
       })
     }
 

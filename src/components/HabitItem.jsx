@@ -13,7 +13,9 @@ const HabitItem = ({habit, idx}) => {
         <div className={styles.status} onClick={handleToggle}>
             {habit.days[0].status === 'done'
             ?<img src="https://cdn-icons-png.flaticon.com/128/13680/13680221.png" alt="" />
-            :<img src="https://cdn-icons-png.flaticon.com/128/399/399274.png" alt="" />}
+            :(habit.days[0].status === 'none')
+            ?<img src="https://cdn-icons-png.flaticon.com/128/6358/6358093.png" alt="" />
+            :<img src="https://cdn-icons-png.flaticon.com/128/5709/5709442.png" alt="" />}
         </div>
         <div className={styles.name}>
           <span>{habit.name}</span>  
