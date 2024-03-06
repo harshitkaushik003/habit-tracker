@@ -10,6 +10,14 @@ const habitSlice = createSlice({
     reducers: {
         addHabit: (state, action)=>{
             state.habits.push(action.payload);
+        },
+        toggle: (state, action)=>{
+            const status = state.habits[action.payload.idx].days[action.payload.id].status;
+            if(status === 'pending'){
+                state.habits[action.payload.idx].days[action.payload.id].status = 'done';
+            }else{
+                state.habits[action.payload.idx].days[action.payload.id].status = 'pending';
+            }
         }
     }
 })

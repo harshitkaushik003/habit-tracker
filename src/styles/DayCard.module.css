@@ -1,0 +1,32 @@
+.dayCard {
+  margin: 0 20px;
+  width: 170px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #FEFADC;
+}
+.dayCard .date {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+.dayCard .date img {
+  width: 40px;
+  height: 40px;
+}
+.dayCard .date span {
+  font-size: 16px;
+  margin: 15px;
+}
+.dayCard .status {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dayCard .status img {
+  width: 70px;
+  height: 70px;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+}/*# sourceMappingURL=DayCard.module.css.map */
